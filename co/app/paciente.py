@@ -30,7 +30,7 @@ def validar_identificacion(ident):
     return len(ident) == 8 and ident.isdigit()
 
 def validar_telefono(tel):
-    return len(tel) >= 10 and tel.isdigit()
+    return len(tel) >= 9 and tel.isdigit()
 
 def registrar_paciente(nombre, identificacion, telefono, fecha_nacimiento):
     if not nombre or not identificacion or not telefono or not fecha_nacimiento:
@@ -173,3 +173,4 @@ def run_gui():
 
 if __name__ == "__main__":
     run_gui()
+
